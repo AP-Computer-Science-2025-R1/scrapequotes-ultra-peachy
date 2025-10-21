@@ -5,6 +5,29 @@
 # Members: [List of team member names]
 # ==================================
 
+
+single_quote = {
+  'text': 'The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.',
+  'author': 'Albert Einstein',
+}
+
+multi_quote = [
+  
+	{
+	  'text': 'The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.',
+	  'author': 'Albert Einstein',
+	},
+	{
+		'text': 'fail. fail. fail. Wow, I just learned 3 new ways on how not to do something!',
+		'author': 'Amaurys Valdez',
+	},
+	{
+		'text': 'I Am Groot',
+		'author': 'Groot',
+	},
+]
+
+
 # SECTION 1: IMPORTS
 # All team members: Add the libraries you need for your function here.
 # import requests
