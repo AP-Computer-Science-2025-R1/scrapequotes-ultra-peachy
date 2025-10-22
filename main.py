@@ -30,10 +30,10 @@ multi_quote = [
 
 # SECTION 1: IMPORTS
 # All team members: Add the libraries you need for your function here.
-# import requests
-# import json
-# import random
-# from bs4 import BeautifulSoup
+import requests
+import json
+import random
+from bs4 import BeautifulSoup
 
 
 # ==================================
@@ -88,3 +88,15 @@ multi_quote = [
 
 # Team Lead/Integrator: Write the main logic here that calls the functions.
 if __name__ == "__main__":
+#load all quotes from disk
+
+def laqfdsk(S):
+    with open("quotes.json", 'r') as qtf:
+        jsondata = json.load(qtf)
+    if S == True:
+        ##single here
+        return jsondata
+    else:
+        #multi here
+        return jsondata
+        # --single or multi quote thing here--
