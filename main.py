@@ -35,12 +35,12 @@ def group_introductions_adam():
 	print("-----------------------------")
 	print(UNDERLINE + "Functions Worked On" + END)
 	print("TD: Captain")
-	print("Adam and Matthew: group_introductions. They are displaying a text that introduces all group members, what they worked on, and the purpose of this project")
-	print("Arham: scrape_all_quotes. He is scraping all quotes from every page of the website.")
-	print("Stephanie: get_random_quote(quotes_list). She is displaying a random quote to the user using the website")
-	print("Anthony: save_quotes_to_disk(quotes_list, date_str). He is saving the scrape to the local file.")
-	print("Eduardo: load_quotes_from_disk(filename). He is loading all the quotes from the previously saved file which helps avoid the need to scrape again.")
-	
+	print(UNDERLINE + "Adam and Matthew:" + END + " group_introductions --> They are displaying a text that introduces all group members, what they worked on, and the purpose of this project")
+	print(UNDERLINE + "Arham:" + END + " scrape_all_quotes --> He is scraping all quotes from every page of the website.")
+	print(UNDERLINE + "Stephanie:" + END + " get_random_quote(quotes_list) --> She is displaying a random quote to the user using the website")
+	print(UNDERLINE + "Anthony:" + END + " save_quotes_to_disk(quotes_list, date_str) --> He is saving the scrape to the local file.")
+	print(UNDERLINE + "Eduardo:" + END + " load_quotes_from_disk(filename) --> He is loading all the quotes from the previously saved file which helps avoid the need to scrape again.")
+
 
 # --- Function for Student E ---
 # TODO: Put your get_random_quote function here.
