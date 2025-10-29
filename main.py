@@ -29,9 +29,10 @@ multi_quote = [
 
 def group_introductions():
 	UNDERLINE = '\033[4m'
-	END = '\033[0m'  # Resets all formatting
+	END = '\033[0m'  
 
-	print("This project was created by: Adam, TD, Arham, Stephanie, Eduardo, Anthony, Matthew")
+	print("This project was created by: Adam, TD, Arham, Stephanie, Eduardo, Anthony, and Matthew")
+	print("-----------------------------")
 	print(UNDERLINE + "Functions Worked On" + END)
 	print("Adam and Matthew: group_introductions")
 
