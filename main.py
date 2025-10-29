@@ -53,6 +53,7 @@ multi_quote = [
 
 from bs4 import BeautifulSoup
 import requests 
+from datetime import date
 
 url = 'https://quotes.toscrape.com'
 page = requests.get(url)
@@ -83,41 +84,14 @@ while True:
 import json
 
 person_JSON = {'text': text, 'author': author, 'tags': tags}
-person_JSON = json.dumps(author)
+person_JSON = json.dumps(text)
 
-with open('person.json', 'w') as json_file:
+with open(str(date.today())+'.json', 'w') as json_file:
 	json_file.write(person_JSON)
 	print('Saved succesfully!')
 
 
-#import json
-#date_str = input("Please put in the date:")
 
-#def save_quotes_to_disk(quotes, date_str):
-    #filename = f"save_quotes_to_disk{date_str}.json"
-    #with open(filename, "w", encoding="utf-8") as f:
-        #json.dump(quotes, f, indent=4, ensure_ascii=False)
-    #print(f"Quotes saved to {filename}")
-
-
-
-
-
-
-
-
-#from bs4 import JSON
-
-#import request 
-
-#url = https://qprintuotes.toscrape.com/
-
-#file_name = input("Please put in the date:")
-
-#def save_quotes_to_disk_json(list , file_name):
-	#with open('save_quotes_to_disk_json', file_name) as f:
-		#json.dump(save_quotes_to_disk_json, f)
-#save_quotes_to_disk_json(list , file_name)
 
 
 
