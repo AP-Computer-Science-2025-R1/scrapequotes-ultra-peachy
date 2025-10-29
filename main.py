@@ -27,42 +27,19 @@ multi_quote = [
 	},
 ]
 
+def group_introductions_adam():
+	UNDERLINE = '\033[4m'
+	END = '\033[0m'  
 
-# SECTION 1: IMPORTS
-# All team members: Add the libraries you need for your function here.
-# import requests
-# import json
-# import random
-# from bs4 import BeautifulSoup
-
-
-# ==================================
-# SECTION 2: FUNCTION DEFINITIONS
-# ==================================
-
-# --- Function for Student A ---
-# TODO: Put your scrape_all_quotes function here.
-# This function should scrape all quotes from the website.
-# It should return a list of quote dictionaries.
-
-
-# --- Function for Student B ---
-# TODO: Put your save_quotes_to_disk function here.
-# This function should take the list of quotes and a filename.
-# It should save the quotes to a JSON or CSV file.
-
-
-# --- Function for Student C ---
-# TODO: Put your load_quotes_from_disk function here.
-# This function should take a filename.
-# If the file exists, it returns the list of quotes from the file.
-# If the file does not exist, it returns an empty list [].
-
-
-# --- Function for Student D ---
-# TODO: Put your get_quotes_by_tag function here.
-# This function should take the list of quotes.
-# It asks the user for a tag and prints any matching quotes.
+	print("This project was created by: Adam, TD, Arham, Stephanie, Eduardo, Anthony, and Matthew")
+	print("-----------------------------")
+	print(UNDERLINE + "Functions Worked On" + END)
+	print("TD: Captain")
+	print(UNDERLINE + "Adam and Matthew:" + END + " group_introductions --> They are displaying a text that introduces all group members, what they worked on, and the purpose of this project")
+	print(UNDERLINE + "Arham:" + END + " scrape_all_quotes --> He is scraping all quotes from every page of the website.")
+	print(UNDERLINE + "Stephanie:" + END + " get_random_quote(quotes_list) --> She is displaying a random quote to the user using the website")
+	print(UNDERLINE + "Anthony:" + END + " save_quotes_to_disk(quotes_list, date_str) --> He is saving the scrape to the local file.")
+	print(UNDERLINE + "Eduardo:" + END + " load_quotes_from_disk(filename) --> He is loading all the quotes from the previously saved file which helps avoid the need to scrape again.")
 
 
 # --- Function for Student E ---
@@ -87,4 +64,3 @@ multi_quote = [
 
 
 # Team Lead/Integrator: Write the main logic here that calls the functions.
-if __name__ == "__main__":
