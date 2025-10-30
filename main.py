@@ -88,12 +88,15 @@ import random
 from bs4 import BeautifulSoup
 import tkinter as tk
 from datetime import date
-#adam and matthew
 
+# Function for Adam and Matthew ---
+# TODO: Put your group_introductions() function here.
+# This function should introduce the student and function they work on.
+ 
 def group_introductions():
 	UNDERLINE = '\033[4m'
 	END = '\033[0m'  
-	print("This project aims to create a command line application to scrape quotations from websites and display them in the terminal. It is all about web scraping learning, improving Python programming skills, and team working.")
+clea	print("This project aims to create a command line application to scrape quotations from websites and display them in the terminal. \nIt is all about web scraping learning, improving Python programming skills, and team working.")
 	print("This project was created by: Adam, TD, Arham, Stephanie, Eduardo, Anthony, and Matthew")
 	print("-----------------------------")
 	print(UNDERLINE + "Functions Worked On" + END)
@@ -104,7 +107,11 @@ def group_introductions():
 	print(UNDERLINE + "Anthony:" + END + " save_quotes_to_disk(quotes_list, date_str) --> He is saving the scrape to the local file.")
 	print(UNDERLINE + "Eduardo:" + END + " load_quotes_from_disk(filename) --> He is loading all the quotes from the previously saved file which helps avoid the need to scrape again.")
 
-#arham
+# --- Function for Arham ---
+# TODO: Put your scrape_all_quotes function here.
+# This function should scrape all quotes from the website.
+# It should return a list of quote dictionaries.
+
 def scrape_all_quotes(base_url='https://quotes.toscrape.com'):
 	page = requests.get(base_url)
 	soup = BeautifulSoup(page.text, 'html.parser')
@@ -131,15 +138,23 @@ def scrape_all_quotes(base_url='https://quotes.toscrape.com'):
 
 	return quotes
 
-#anthony
+# --- Function for Anthony ---
+# TODO: Put your save_quotes_to_disk function here.
+# This function should take the list of quotes and a filename.
+# It should save the quotes to a JSON or CSV file.
+
 def save_quotes_to_disk(quotes_list):
 	with open(str(date.today())+'.json', 'w') as json_file:
 		json.dump(quotes_list, json_file, indent=2)
 		print('Saved succesfully!')
 
+# --- Function for Eduardo ---
+# TODO: Put your load_quotes_from_disk function here.
+# This function should take a filename.
+# If the file exists, it returns the list of quotes from the file.
+# If the file does not exist, it returns an empty list [].
 
-#eduardo a
-#load all quotes from disk refactoed thing
+
 def load_quotes_from_disk(filename):
 	try:
 		with open(filename, 'r') as qtf:
@@ -149,7 +164,13 @@ def load_quotes_from_disk(filename):
 		print(f"Error: File '{filename}' not found.")
 		return None
 
-#stephanie
+
+# --- Function for Stephanie ---
+# TODO: Put your get_random_quote function here.
+# This function should take the list of quotes.
+# It picks one random quote and prints it.
+
+
 def get_random_quote(quotes):
 	if not quotes:
 		print("No quotes available.")
