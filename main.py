@@ -95,8 +95,8 @@ from datetime import date
  
 def group_introductions():
 	UNDERLINE = '\033[4m'
-	END = '\033[0m'  
-clea	print("This project aims to create a command line application to scrape quotations from websites and display them in the terminal. \nIt is all about web scraping learning, improving Python programming skills, and team working.")
+	END = '\033[0m'  	
+	print("This project aims to create a command line application to scrape quotations from websites and display them in the terminal. \nIt is all about web scraping learning, improving Python programming skills, and team working.")
 	print("This project was created by: Adam, TD, Arham, Stephanie, Eduardo, Anthony, and Matthew")
 	print("-----------------------------")
 	print(UNDERLINE + "Functions Worked On" + END)
