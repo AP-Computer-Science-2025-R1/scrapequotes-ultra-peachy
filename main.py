@@ -2,7 +2,7 @@
 #      Python Quote Scraper
 #
 # Team: [Ultra Peachy]
-# Members: [List of team member names]
+# Members: [Eduardo, Anthony, Stephanie, Arham, Adam, Tarandeep, Mathew]
 # ==================================
 
 
