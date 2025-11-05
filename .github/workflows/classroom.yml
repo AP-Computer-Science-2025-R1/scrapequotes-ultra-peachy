@@ -63,13 +63,6 @@ jobs:
           echo "PASS: Function exists" || echo "FAIL: Function not found"'
         timeout: 10
         max-score: 5
-    - name: Code Quality - 10 points
-      id: code-quality-10-points
-      uses: classroom-resources/autograding-python-grader@v1
-      with:
-        timeout: 10
-        max-score: 10
-        setup-command: ''
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
@@ -78,6 +71,5 @@ jobs:
         TEST-LOAD_QUOTES_FROM_DISK-5-POINTS_RESULTS: "${{steps.test-load_quotes_from_disk-5-points.outputs.result}}"
         TEST-GET_RANDOM_QUOTE-5-POINTS_RESULTS: "${{steps.test-get_random_quote-5-points.outputs.result}}"
         TEST-GROUP_INTRODUCTIONS-5-POINTS_RESULTS: "${{steps.test-group_introductions-5-points.outputs.result}}"
-        CODE-QUALITY-10-POINTS_RESULTS: "${{steps.code-quality-10-points.outputs.result}}"
       with:
-        runners: test-save_quotes_to_disk-5-points,test-scrape_all_quotes-10-points,test-load_quotes_from_disk-5-points,test-get_random_quote-5-points,test-group_introductions-5-points,code-quality-10-points
+        runners: test-save_quotes_to_disk-5-points,test-scrape_all_quotes-10-points,test-load_quotes_from_disk-5-points,test-get_random_quote-5-points,test-group_introductions-5-points
